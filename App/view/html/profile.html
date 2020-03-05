@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="/assets/css/Profile.css">
+<div id="conteudo" class="container">
+    <center><h1>Edite seu Perfil</h1></center>
+  	<hr>
+	<div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <img id="image" src="/assets/profiles/{{SESSION['id']}}.jpg" class="avatar img-circle" alt="avatar">
+          <h6>Envie uma foto diferente...</h6>
+    <form enctype="multipart/form-data" action="/Profile/updateProfile" class="form-horizontal" role="form" method="POST">
+          <input type="file" class="form-control" name="profile">
+          <input class="hide" name="id" value="{{SESSION['id']}}">
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+          Ebaa <strong>...</strong>. Bem vindo {{SESSION['nome']}} ao seu perfil faça as alterações como voce desejar :D.
+        </div>
+        <h3>Informações Pessoais</h3>
+        
+        
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Nome:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="{{SESSION['nome']}}" name="nome">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Sobrenome:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="{{usuario.sobrenome}}" name="sobrenome">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Empresa:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="{{usuario.empresa}}" name="empresa">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="{{SESSION['email']}}" name="email">
+            </div>
+          </div>
+       
+          <div class="form-group">
+            <label class="col-md-3 control-label">Username:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="{{SESSION['login']}}" name="login">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="" name="senha">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Confirm password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="submit" class="btn btn-primary" value="Salvar">
+              <span></span>
+              <input type="reset" class="btn btn-danger" value="Cancelar">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>

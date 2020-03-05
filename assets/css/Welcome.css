@@ -1,0 +1,66 @@
+/* 186, 77, 227 nubanco hover*/
+
+#Profile {
+  margin-right: 5px;
+  color: rgb(186, 77, 227);
+  border-color: rgb(186, 77, 227);
+  background-color: white;
+}
+
+#Profile:hover {
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(186, 77, 227);
+}
+
+#Profile {
+  color: rgb(186, 77, 227);
+  border-color: rgb(186, 77, 227);
+  background-color: white;
+}
+
+#Profile:hover {
+  color: rgb(85, 0, 116);
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(186, 77, 227);
+}
+
+#Navebar {
+  background-color: rgb(138, 5, 190)!important;    
+}
+  
+#celular {
+  position: absolute;
+  margin: 0px;
+  right: 190px;
+  bottom: 210px;
+}
+  
+#jump {
+  margin: -250px 0px 0px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+  
+h1 {
+  font-family: 'Trade Winds', cursive;
+  font-size: 60px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+ab {
+  color: #000000;
+}
+
+#div {
+  font-family: 'Trade Winds', cursive;
+  color: white;
+  position: relative;
+  left: 10px;
+}
+
+.hide {
+  display: none;
+}

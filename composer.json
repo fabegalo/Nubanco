@@ -1,0 +1,23 @@
+{
+    "name": "fabegalo/nubanco",
+    "description": "NuBanco, App Bancario",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabricio F. Galo",
+            "email": "fabegalo@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Core\\" : "Core/",
+            "App\\" : "App/"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.0",
+        "php": ">= 7.0"
+
+    }
+}
