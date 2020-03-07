@@ -28,13 +28,6 @@
   background-color: rgb(138, 5, 190)!important;    
 }
   
-#celular {
-  position: absolute;
-  margin: 0px;
-  right: 190px;
-  bottom: 210px;
-}
-  
 #jump {
   margin: -250px 0px 0px;
   object-fit: cover;

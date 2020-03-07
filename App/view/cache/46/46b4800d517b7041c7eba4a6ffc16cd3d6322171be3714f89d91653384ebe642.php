@@ -34,8 +34,8 @@ class __TwigTemplate_1d6572ee0af72ed875b077003850842e17576efee2b4a860a7513449044
     {
         $macros = $this->macros;
         // line 1
-        echo "<a href=\"/Usuario/form?op=inclui\" class=\"btn btn-success\">Cadastrar</a>
-<table class=\"table table-striped\">
+        echo "
+<table class=\"table table-striped container w-auto\">
     <thead>
         <th>ID</th>
         <th>Nome</th>
@@ -68,11 +68,11 @@ class __TwigTemplate_1d6572ee0af72ed875b077003850842e17576efee2b4a860a7513449044
             // line 17
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["u"], "email", [], "any", false, false, false, 17), "html", null, true);
             echo "</td>
-            <td> <a href=\"/Usuario/form?op=altera&id=";
+            <td> <a href=\"/Usuario/form/?op=altera&id=";
             // line 18
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["u"], "id", [], "any", false, false, false, 18), "html", null, true);
             echo "\" class=\"btn btn-primary\"> Alterar </a> </td>
-            <td> <a href=\"/Usuario/recebePost?op=deleta&id=";
+            <td> <a href=\"/Usuario/recebePost/?op=deleta&id=";
             // line 19
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["u"], "id", [], "any", false, false, false, 19), "html", null, true);
             echo "\" class=\"btn btn-danger\"> Excluir </a> </td>
@@ -84,7 +84,8 @@ class __TwigTemplate_1d6572ee0af72ed875b077003850842e17576efee2b4a860a7513449044
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 22
         echo "    </tbody>
-</table>";
+</table>
+<a href=\"/Usuario/form/?op=inclui\" class=\"btn btn-success\">Cadastrar</a>";
     }
 
     public function getTemplateName()
@@ -104,6 +105,6 @@ class __TwigTemplate_1d6572ee0af72ed875b077003850842e17576efee2b4a860a7513449044
 
     public function getSourceContext()
     {
-        return new Source("", "Usuario/lista.html", "/home/fabegalo/Repositorio/NuBanco/App/view/html/Usuario/lista.html");
+        return new Source("", "Usuario/lista.html", "/home/fabegalo/Repositorio/Heroku/nubanco/App/view/html/Usuario/lista.html");
     }
 }

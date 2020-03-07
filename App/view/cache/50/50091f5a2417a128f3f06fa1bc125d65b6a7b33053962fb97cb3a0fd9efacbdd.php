@@ -50,9 +50,7 @@ class __TwigTemplate_745809538571a567d9cf5a0dbc8b32d74895fb5f9364d5260adb9019a12
         echo "</h1>
 </div>
 
-<img class=\"shadow mb-5\" id=\"jump\" src=\"https://nubank.com.br/images/woman-jumping/woman-jumping@1x.jpg\" alt=\"Mulher jovem de macacão jeans pulando uma calçada expressando liberdade.\">
-
-<img id=\"celular\" src=\"https://nubank.com.br/images/home_products/home_products@1x.png\" alt=\"Celular com o aplicativo do Nubank aberto na seção da conta e o cartão roxo do Nubank\">
+<img class=\"img-fluid shadow mb-5\" id=\"jump\" src=\"https://nubank.com.br/images/woman-jumping/woman-jumping@1x.jpg\" alt=\"Mulher jovem de macacão jeans pulando uma calçada expressando liberdade.\">
 ";
     }
 
@@ -73,6 +71,6 @@ class __TwigTemplate_745809538571a567d9cf5a0dbc8b32d74895fb5f9364d5260adb9019a12
 
     public function getSourceContext()
     {
-        return new Source("", "welcome.html", "/home/fabegalo/Repositorio/NuBanco/App/view/html/welcome.html");
+        return new Source("", "welcome.html", "/home/fabegalo/Repositorio/Heroku/nubanco/App/view/html/welcome.html");
     }
 }

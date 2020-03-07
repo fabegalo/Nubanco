@@ -1,5 +1,5 @@
-<a href="/Usuario/form?op=inclui" class="btn btn-success">Cadastrar</a>
-<table class="table table-striped">
+
+<table class="table table-striped container w-auto">
     <thead>
         <th>ID</th>
         <th>Nome</th>
@@ -15,9 +15,10 @@
             <td>{{u.nome}}</td>
             <td>{{u.login}}</td>
             <td>{{u.email}}</td>
-            <td> <a href="/Usuario/form?op=altera&id={{u.id}}" class="btn btn-primary"> Alterar </a> </td>
-            <td> <a href="/Usuario/recebePost?op=deleta&id={{u.id}}" class="btn btn-danger"> Excluir </a> </td>
+            <td> <a href="/Usuario/form/?op=altera&id={{u.id}}" class="btn btn-primary"> Alterar </a> </td>
+            <td> <a href="/Usuario/recebePost/?op=deleta&id={{u.id}}" class="btn btn-danger"> Excluir </a> </td>
         </tr>
         {% endfor %}
     </tbody>
 </table>
+<a href="/Usuario/form/?op=inclui" class="btn btn-success">Cadastrar</a>
